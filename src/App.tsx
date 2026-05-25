@@ -4,18 +4,20 @@ function App() {
 
   return (
     <>
-      <main>
+      <main className='homePage'>
           <h1>Fluxo Task</h1>
           <section>
             <p>Gestão inteligente de tarefas</p>
           </section>
-          <section>
+          <section className='loginForm'>
             <label>Email</label>
             <input type="email" />
             <label>Senha</label>
             <input type="password" />
+            <div className='rememberForgot'>
             <input type="checkbox" id="remember" />
             <label htmlFor="remember">Lembrar de mim</label>
+            </div>
             <a href="#">Esqueci minha senha</a>
             <button>Entrar</button>
           </section>
