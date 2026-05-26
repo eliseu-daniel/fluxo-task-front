@@ -1,0 +1,97 @@
+.homePage {
+  background: var(--color-background-gray);
+  border: 0.5px solid var(--color-border-secondary);
+  border-radius: var(--border-radius-md);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  justify-self: center;
+  align-self: center;
+}
+
+.backgroundImage {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #378ADD 0%, #1D9E75 100%);
+  border-radius: 14px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #378ADD 0%, #1D9E75 100%);
+  border-radius: 14px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleSubtitle {
+  text-align: center;
+
+  h1, p{
+    color: var(--color-text-white);
+  }
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #378ADD 0%, #1D9E75 100%);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-md);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+}
+
+.rememberForgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  font-size: 13px;
+
+  .remember{
+    display: flex;
+    
+    label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      color: var(--color-text-white);
+    }
+    
+    input {
+      color: var(--color-text-info);
+      text-decoration: none;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-text-info);
+  }
+}
+
+.register {
+
+  p {
+    color: var(--color-text-white);
+  }
+
+  a{
+    text-decoration: none;
+    color: var(--color-text-info);
+  }
+}
