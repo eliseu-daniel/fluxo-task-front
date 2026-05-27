@@ -39,6 +39,23 @@
 .loginForm {
   display: flex;
   flex-direction: column;
+  gap: 5px;
+  
+  label{
+    color: var(--color-text-white);
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  input{
+    background-color: var(--color-border-gray);
+    border: 0.5px solid var(--color-border-tertiary);
+    padding: 12px;
+    border-radius: var(--border-radius-md);
+    color: var(--color-text-tertiary);
+  }
 
   button {
     width: 100%;
@@ -70,11 +87,6 @@
       gap: 6px;
       cursor: pointer;
       color: var(--color-text-white);
-    }
-    
-    input {
-      color: var(--color-text-info);
-      text-decoration: none;
     }
   }
 
