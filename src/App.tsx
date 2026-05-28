@@ -1,15 +1,9 @@
-import '@/scss/App.scss'
-import Login from '@/pages/login'
-import Dashboard from '@/pages/dashboard'
+import { RouterProvider } from "react-router-dom";
+
+import { router } from "@/router/routes";
 
 function App() {
-
-  return (
-    <>
-      <Dashboard />
-      <Login />
-    </>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

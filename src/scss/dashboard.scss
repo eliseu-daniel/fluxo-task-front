@@ -25,6 +25,59 @@
       width: 100%;
       background: var(--color-background-gray);
       border-radius: var(--border-radius-md);
+      padding: 10px;
+
+      .OverviewHeader{ 
+        h2{
+          color: var(--color-text-tertiary);
+        }
+      }
+
+      .count{
+        color: var(--color-text-white);
+      }
+
+      p{
+        color: var(--color-text-danger);
+      }
+    }
+  }
+
+  .dashboardWidgets{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    gap: 10px;
+
+    .widgetProdutividade{
+      width: 60%;
+      background: var(--color-background-gray);
+      padding: 1rem;
+      border-radius: var(--border-radius-md);
+      
+      .widgetsHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .widgetsBody {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .widgetTarefas{
+      width: 40%;
+      background: var(--color-background-gray);
+      padding: 1rem;
+      border-radius: var(--border-radius-md);
+
+
+      .widgetsBody{
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
 }

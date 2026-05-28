@@ -1,12 +1,12 @@
 interface WidgetProps {
-  titleWidget: string;
   classname?: string;
+  children: React.ReactNode;
 }
 
-export default function Widget({ titleWidget, classname }: WidgetProps) {
+export default function Widget({ classname, children  }: WidgetProps) {
   return (
     <div className={classname || ''}>
-      <h2>{titleWidget}</h2>
+      {children}
     </div>
   );
 }
