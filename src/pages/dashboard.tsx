@@ -1,4 +1,5 @@
 import Buttons from '@/components/Buttons'
+import OverviewCards from '@/components/OverviewCards';
 import '@/scss/dashboard.scss'
 
 export default function Dashboard() {
@@ -14,6 +15,29 @@ export default function Dashboard() {
             className='dashboardHeaderButton'
            />
         </div>
+      </div>
+      <div className='dashboardOverviewCards'>
+        <OverviewCards title='Abertas' 
+          valueCard='42' 
+          metrics='+12% vs mês anterior'
+          classname='card'
+        />
+        <OverviewCards title='Em andamento' 
+          valueCard='76' 
+          metrics='7 atribuições hoje'
+          classname='card'
+
+        />
+        <OverviewCards title='Concluídas' 
+          valueCard='128' 
+          metrics='+23% vs mês anterior'
+          classname='card'
+        />
+        <OverviewCards title='Atrasadas' 
+          valueCard='15' 
+          metrics='Requer atenção'
+          classname='card'
+        />
       </div>
     </div>
   );

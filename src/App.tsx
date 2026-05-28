@@ -5,10 +5,10 @@ import Dashboard from '@/pages/dashboard'
 function App() {
 
   return (
-    <div className='appContainer'>
+    <>
       {/* <Login /> */}
       <Dashboard />
-    </div>
+    </>
   )
 }
 
