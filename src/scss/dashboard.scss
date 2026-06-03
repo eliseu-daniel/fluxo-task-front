@@ -1,33 +1,23 @@
-
 .dashboardContainer{
-  display: flex;
-  flex-direction: column;
+  @apply flex flex-col min-h-screen p-8;
   background: var(--color-background-black);
-  min-height: 100vh;
-  padding: 2rem;
 
   .dashboardHeader{
-    display: flex;
-    justify-content: space-between;
+    @apply flex justify-between;
 
     .dashboardHeaderButtons{
-      display: flex;
-      gap: 1rem;
+      @apply flex gap-4;
     }
   }
 
   .dashboardOverviewCards{
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
+    @apply flex gap-4 justify-between;
 
     .card{
-      width: 100%;
+      @apply w-full rounded-md p-2.5;
       background: var(--color-background-gray);
-      border-radius: var(--border-radius-md);
-      padding: 10px;
 
-      .OverviewHeader{ 
+      .OverviewHeader{
         h2{
           color: var(--color-text-tertiary);
         }
@@ -44,39 +34,27 @@
   }
 
   .dashboardWidgets{
-    display: flex;
-    margin-top: 2rem;
-    justify-content: space-between;
-    gap: 10px;
+    @apply flex mt-8 justify-between gap-2.5;
 
     .widgetProdutividade{
-      width: 60%;
+      @apply w-3/5 p-4 rounded-md;
       background: var(--color-background-gray);
-      padding: 1rem;
-      border-radius: var(--border-radius-md);
-      
+
       .widgetsHeader{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @apply flex items-center justify-between;
       }
 
       .widgetsBody {
-        display: flex;
-        justify-content: space-between;
+        @apply flex justify-between;
       }
     }
 
     .widgetTarefas{
-      width: 40%;
+      @apply w-2/5 p-4 rounded-md;
       background: var(--color-background-gray);
-      padding: 1rem;
-      border-radius: var(--border-radius-md);
-
 
       .widgetsBody{
-        display: flex;
-        justify-content: space-between;
+        @apply flex justify-between;
       }
     }
   }

@@ -1,7 +1,4 @@
 .appContainer{
-  display: flex;
-  justify-content: center;
+  @apply flex justify-center min-h-screen;
   background: var(--color-background-black);
-  min-height: 100vh;
 }
-

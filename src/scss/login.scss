@@ -1,36 +1,16 @@
 .homePage {
+  @apply p-10 w-full max-w-[420px] justify-self-center self-center rounded-md;
   background: var(--color-background-gray);
-  // background: var(--color-background-black);
   border: 0.5px solid var(--color-border-secondary);
-  border-radius: var(--border-radius-md);
-  padding: 2.5rem;
-  width: 100%;
-  max-width: 420px;
-  justify-self: center;
-  align-self: center;
 }
 
 .backgroundImage {
-  width: 56px;
-  height: 56px;
+  @apply w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-[14px];
   background: linear-gradient(135deg, #378ADD 0%, #1D9E75 100%);
-  border-radius: 14px;
-  margin: 0 auto 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
-  background: linear-gradient(135deg, #378ADD 0%, #1D9E75 100%);
-  border-radius: 14px;
-  margin: 0 auto 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .titleSubtitle {
-  text-align: center;
+  @apply text-center;
 
   h1, p{
     color: var(--color-text-white);
@@ -38,61 +18,41 @@
 }
 
 .loginForm {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  
+  @apply flex flex-col gap-[5px];
+
   label{
+    @apply text-left text-sm m-0;
     color: var(--color-text-white);
-    text-align: left;
-    margin-bottom: 0.5rem;
-    font-size: 14px;
-    margin: 0;
   }
 
   input{
-    background-color: var(--color-border-gray);
+    @apply p-3 rounded-md;
+    background-color: var(--color-background-gray);
     border: 0.5px solid var(--color-border-tertiary);
-    padding: 12px;
-    border-radius: var(--border-radius-md);
     color: var(--color-text-tertiary);
   }
 
   button {
-    width: 100%;
-    padding: 12px;
+    @apply w-full p-3 rounded-md text-[15px] font-medium cursor-pointer text-white border-none;
     background: linear-gradient(135deg, #378ADD 0%, #1D9E75 100%);
-    color: white;
-    border: none;
-    border-radius: var(--border-radius-md);
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
     transition: opacity 0.2s;
   }
 }
 
 .rememberForgot {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1.5rem;
-  font-size: 13px;
+  @apply flex items-center justify-between mb-6 text-[13px];
 
   .remember{
-    display: flex;
-    
+    @apply flex;
+
     label {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      cursor: pointer;
+      @apply flex items-center gap-1.5 cursor-pointer;
       color: var(--color-text-white);
     }
   }
 
   a {
-    text-decoration: none;
+    @apply no-underline;
     color: var(--color-text-info);
   }
 }
@@ -104,7 +64,7 @@
   }
 
   a{
-    text-decoration: none;
+    @apply no-underline;
     color: var(--color-text-info);
   }
 }

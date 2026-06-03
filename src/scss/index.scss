@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -16,51 +20,53 @@
   --mono: ui-monospace, Consolas, monospace;
 
   /* Cores Primárias */
-    --color-primary: #378ADD;
-    --color-primary-dark: #1D9E75;
-    --color-primary-light: #E3F2FD;
-  
-    /* Cores de Status */
-    --color-danger: #FF6B6B;
-    --color-success: #51CF66;
-    --color-warning: #FFD43B;
-    --color-info: #4DABF7;
-  
-    /* Fundos */
-    --color-background-primary: #FFFFFF;
-    --color-background-secondary: #F8F9FA;
-    --color-background-tertiary: #E9ECEF;
-    --color-background-black: #1A1A1A;
-    --color-background-gray: #555555;
-  
-    /* Bordas */
-    --color-border-primary: #DEE2E6;
-    --color-border-secondary: #CED4DA;
-    --color-border-tertiary: #ced4da3d;
-  
-    /* Texto */
-    --color-text-primary: #1A1A1A;
-    --color-text-secondary: #555555;
-    --color-text-tertiary: #999999;
-    --color-text-white: #FFFFFF;
-  
-    /* Texto Colorido */
-    --color-text-danger: #DC3545;
-    --color-text-success: #28A745;
-    --color-text-warning: #FFC107;
-    --color-text-info: #17A2B8;
-  
-    /* Fundos Coloridos */
-    --color-background-danger: #FFE5E5;
-    --color-background-success: #E8F5E9;
-    --color-background-warning: #FFF3CD;
-    --color-background-info: #E3F2FD;
-  
-    /* Border Radius */
-    --border-radius-md: 8px;
-    --border-radius-lg: 12px;
+  --color-primary: #378ADD;
+  --color-primary-dark: #1D9E75;
+  --color-primary-light: #E3F2FD;
 
-  font: 18px/145% var(--sans);
+  /* Cores de Status */
+  --color-danger: #FF6B6B;
+  --color-success: #51CF66;
+  --color-warning: #FFD43B;
+  --color-info: #4DABF7;
+
+  /* Fundos */
+  --color-background-primary: #FFFFFF;
+  --color-background-secondary: #F8F9FA;
+  --color-background-tertiary: #E9ECEF;
+  --color-background-black: #1A1A1A;
+  --color-background-gray: #555555;
+
+  /* Bordas */
+  --color-border-primary: #DEE2E6;
+  --color-border-secondary: #CED4DA;
+  --color-border-tertiary: #ced4da3d;
+
+  /* Texto */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #555555;
+  --color-text-tertiary: #999999;
+  --color-text-white: #FFFFFF;
+
+  /* Texto Colorido */
+  --color-text-danger: #DC3545;
+  --color-text-success: #28A745;
+  --color-text-warning: #FFC107;
+  --color-text-info: #17A2B8;
+
+  /* Fundos Coloridos */
+  --color-background-danger: #FFE5E5;
+  --color-background-success: #E8F5E9;
+  --color-background-warning: #FFF3CD;
+  --color-background-info: #E3F2FD;
+
+  /* Border Radius */
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 145%;
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
@@ -94,18 +100,6 @@
     filter: invert(1) brightness(2);
   }
 }
-
-// #root {
-//   width: 1126px;
-//   max-width: 100%;
-//   margin: 0 auto;
-//   text-align: center;
-//   border-inline: 1px solid var(--border);
-//   min-height: 100svh;
-//   display: flex;
-//   flex-direction: column;
-//   box-sizing: border-box;
-// }
 
 body {
   margin: 0;
